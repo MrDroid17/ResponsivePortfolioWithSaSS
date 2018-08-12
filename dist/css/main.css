@@ -24,7 +24,7 @@
   position: fixed;
   top: 0%;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -46,6 +46,18 @@
     transition: all 0.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: #444;
+    transition: all 0.5s ease-out;
+    transform: translate3d(0, 100%, 0); }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .portrait {
+      width: 200px;
+      height: 200px;
+      background: url("../img/portrait.jpg");
+      border-radius: 50%;
+      border: solid 3px #fce408; }
 
 * {
   box-sizing: border-box;
