@@ -28,7 +28,17 @@ $background-opacity:0.9;
     }
 }
 
-// Mdi Query mixins
+// set text-color
+@function set-text-color($color) {
+    @if(lightness($color)> 40) {
+        @return #000;
+    }
+    @else {
+        @return #fff;
+    }
+}
+
+// Media Query mixins
 @mixin mediaSm {
     @media screen and (max-width: 400px) {
         @content;
@@ -43,7 +53,7 @@ $background-opacity:0.9;
 
 @mixin mediaLg {
     @media screen and (min-width: 641px) and (max-width: 1080px) {
-        @content
+        @content;
     }
 }
 
